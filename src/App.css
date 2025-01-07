@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'RobotoFont';
+    src: url('../src/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'RobotoFont', sans-serif !important;
+    touch-action: pan-x pan-y;
+    max-width: 420px;
+    margin: 0 auto !important;
+}
+
+.font-bold {
+    font-weight: var(--font-bold);
+}

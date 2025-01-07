@@ -1,0 +1,95 @@
+.bgColor {
+    background-color: #01aa4f;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.sonar-wrapper {
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.sonar-emitter {
+    position: relative;
+    margin: 120px auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 9999px;
+    background-color: hsla(148, 100%, 39%, 1);
+}
+
+.intro-scan-qr{
+      position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0px;
+    z-index: 22;
+    max-width: 420px;
+}
+
+.sonar-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: hsla(148, 100%, 39%, 1);
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.heading1 {
+    
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.78px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.heading2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.qr-scann {
+    position: absolute;
+    top: 35px;
+    left: 38px;
+}
+
+.sonar-wave1 {
+    animation: sonarWave 2s linear infinite;
+}
+
+.sonar-wave2 {
+    animation: sonarWave 2s 0.5s linear infinite;
+}
+
+.sonar-wave3 {
+    animation: sonarWave 2s 1s linear infinite;
+}
+
+.sonar-wave4 {
+    animation: sonarWave 2s 1.5s linear infinite;
+}
+
+@keyframes sonarWave {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
